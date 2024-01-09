@@ -68,7 +68,8 @@ This folder contains two major configurations needed to
 provide the analysis of the data: **entities-count-config.json** and **marvel-api-config.json**.
 <h4 style="color:red"> NOTE: </h4> Please do not delete the above-mentioned configurations and their contents. This may cause the data analysis to show errors when running the Jupyter notebook. For entities-count-config.json, this can cause the number of individual entity types to be recalculated via API calls.
 This can distort the results of the analysis when the Jupyter notebook is called repeatedly.
-As the analysis was carried out statically at the time of creation, it cannot be ruled out that the number of entities for the individual entity types has changed since the time the data was analysed (i.e. it is possible that new comics or new series have been written since then, for example). 
+As the analysis was carried out statically at the time of creation, it cannot be ruled out that the number of entities for the individual entity types has changed since the time the data was analysed (i.e. it is possible that new comics or new series have been written since then, for example). <br/>
+Date of the last analysis: January 09, 2024.
 
 ### <a name="entities-count-header"></a>entities-count-config.json
 This configuration contains the total number of possible entity types that exist in the Marvel API.
@@ -82,7 +83,7 @@ These include:
 The file is recalculated during the execution of the Jupyter notebook if it does not exist or is empty.
 The file has the following structure:
 ```json
-{"totalHeroCount": 1563, "totalComicsCount": 58366, "totalSeriesCount": 14592, "totalStoriesCount": 133909, "totalEventsCount": 73}
+{"totalHeroCount": "x", "totalComicsCount": "x", "totalSeriesCount": "x", "totalStoriesCount": "x", "totalEventsCount": "x"}
 `````
 **Comics**: the specific comics released so far. <br>
 **Series**: consist of more comics. <br>
@@ -119,7 +120,8 @@ During the data analysis, this file was imported to the Jupyter notebook using P
 This folder contains a **JSON** file containing information about all characters from Marvel: **characters.json**.
 <h4 style="color:red"> NOTE: </h4> Please do not delete the above-mentioned file and its contents. This may cause the data analysis to show errors when running the Jupyter notebook. For characters.json, this can cause the number of characters to be recalculated via API calls.
 This can distort the results of the analysis when the Jupyter notebook is called repeatedly.
-As the analysis was carried out statically at the time of creation, it cannot be ruled out that the number of characters has changed since the time the data was analysed (i.e. it is possible that new characters have been created since then, for example). 
+As the analysis was carried out statically at the time of creation, it cannot be ruled out that the number of characters has changed since the time the data was analysed (i.e. it is possible that new characters have been created since then, for example). <br/>
+Date of the last analysis: January 09, 2024. 
 
 ### characters.json
 Contains all characters stored in form of JSON array consisting of JSON objects.
